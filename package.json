@@ -1,0 +1,14 @@
+{
+  "name": "iopay-api-sdk-nodejs",
+  "version": "1.0.0",
+  "description": "Library for communication with Iopay API",
+  "main": "index.js",
+  "author": "IOPAY",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "js-base64": "^3.7.2",
+    "sync-request": "^6.1.0"
+  }
+}
