@@ -11,13 +11,13 @@ Faça a instalação da dependência:
 - NPM
 
 ```bash
-npm install iopay-payments/iopay-api-sdk-nodejs
+npm install @iopay-payments/iopay-api-sdk-nodejs
 ```
 
 - Yarn
 
 ```bash
-yarn add iopay-payments/iopay-api-sdk-nodejs
+yarn add @iopay-payments/iopay-api-sdk-nodejs
 ```
 
 ---
@@ -38,7 +38,7 @@ Utilize as seguintes variáveis de ambiente para que a SDK possa se autenticar a
 Quando suas credenciais estiverem salvas em variáveis de ambiente, não é necessário utilizar a função `IopayClient.auth()` para se autenticar na API IOPAY
 
 ```javascript
-const IopayClient = require("iopay-api-sdk-nodejs/IopayApiClient");
+const IopayClient = require("@iopay-payments/iopay-api-sdk-nodejs/IopayApiClient");
 
 // Enjoy API
 let transactionsList = IopayClient.Transactions.getAll({limit: 50, page:2});
@@ -49,7 +49,7 @@ let transactionsList = IopayClient.Transactions.getAll({limit: 50, page:2});
 Utilize a função `IopayClient.auth()` caso suas credenciais não estejam nas variáveis de ambiente
 
 ```javascript
-const IopayClient = require("iopay-api-sdk-nodejs/IopayApiClient");
+const IopayClient = require("@iopay-payments/iopay-api-sdk-nodejs/IopayApiClient");
 
 let myCredentials = {
     secret:         "my_secret_xxx",
